@@ -1,0 +1,195 @@
+<div class="grid">
+    <div class="col-10 col-offset-1">
+        <div class="grid">
+            <div class="col-12 sm:col-12 md:col-6 lg:col-6">
+                <div class="grid">
+                    <div class="col-12">
+                        <p-card header="Login to your account">
+                            <div class="p-fluid">
+                                <div class="p-field">
+                                    <label for="email">Email</label>
+                                    <input id="email" type="text" pInputText>
+                                </div>
+                                <div class="p-field">
+                                    <label for="password">Password</label>
+                                    <input id="password" type="text" pInputText>
+                                </div>
+                            </div>
+                            <ng-template pTemplate="footer">
+
+                                <div style="display: flex; justify-content: flex-end">
+                                    <div>
+
+                                        <p-checkbox name="group1" value="true" [(ngModel)]="rememberPC" inputId="ny">
+                                        </p-checkbox>
+                                        <label style="font-size: 14px; color: grey" for="value"> Remember on this
+                                            computer</label>
+                                        <p><a style="font-size: 14px;" href="#">Forget Password?</a></p>
+
+                                    </div>
+
+                                    <div>
+                                        <button pButton pRipple type="button" label="Login"
+                                            class="p-button-raised"></button>
+                                    </div>
+                                </div>
+
+                            </ng-template>
+                        </p-card>
+                    </div>
+                    <div class="col-12">
+                        <div>
+                            <div class="grid">
+                                <div class="col-12 md:col-6 lg:col-3"><button pButton pRipple type="button"
+                                        label="Inactive" class="p-button-raised" disabled="true"></button></div>
+                                <div class="col-12 md:col-6 lg:col-3"><button pButton pRipple type="button"
+                                        label="Normal" class="p-button-raised"></button></div>
+                                <div class="col-12 md:col-6 lg:col-3"><button id="hover"
+                                        style="transition-duration: 0.4s;" pButton pRipple type="button" label="Hover"
+                                        class="p-button-raised"></button></div>
+                                <div class="col-12 md:col-6 lg:col-3"><button pButton pRipple type="button"
+                                        label="Pushed" class="p-button-raised"></button></div>
+                            </div>
+                            <div class="grid">
+                                <div class="col-12 md:col-6 lg:col-3"><button style="color: black;" pButton pRipple
+                                        type="button" label="Inactive" class="p-button-raised p-button-text "
+                                        disabled="true"></button></div>
+                                <div class="col-12 md:col-6 lg:col-3"><button style="color: black;" pButton pRipple
+                                        type="button" label="Normal" class="p-button-raised p-button-text"></button>
+                                </div>
+                                <div class="col-12 md:col-6 lg:col-3"><button id="hover" style="color: black;" pButton
+                                        pRipple type="button" label="Hover"
+                                        class="p-button-raised p-button-text"></button></div>
+                                <div class="col-12 md:col-6 lg:col-3"><button style="color: black;" pButton pRipple
+                                        type="button" label="Pushed" class="p-button-raised p-button-text"></button>
+                                </div>
+                            </div>
+                            <div class="grid">
+
+                                <div class="col-12 md:col-6 lg:col-6">
+                                    <div class="p-fluid">
+                                        <div class="p-field">
+                                            <input style="background-color: lightgrey; opacity: 0.3" id="disabled-input"
+                                                type="text" pInputText [disabled]="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 md:col-6 lg:col-6">
+                                    <div class="p-fluid">
+                                        <div class="p-field">
+                                            <input type="text" pInputText>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="grid">
+                                <div class="col-12 md:col-6 lg:col-6">
+                                    <div class="p-fluid">
+                                        <div class="p-field">
+                                            <input
+                                                style="border:2px solid rgba(83, 73, 73, 0.3); background-color: rgba(98, 95, 95, 0.03);"
+                                                type="text" pInputText>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 md:col-6 lg:col-6">
+                                    <div class="p-fluid">
+                                        <div class="p-field">
+                                            <input
+                                                style="border:2px solid rgba(255, 0, 0, 0.2); background-color: rgba(255, 0, 0, 0.2);"
+                                                type="text" pInputText>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 sm:col-12 md:col-6 lg:col-6">
+                <p-card header="Register new account">
+                    <div class="p-fluid">
+                        <div class="grid">
+                            <div class="col-12 sm:col-12 md:col-6 lg:col-6">
+                                <div class="p-field">
+                                    <label for="name">Name</label>
+                                    <p style="color: red; display: inline;">*</p>
+                                    <input id="name" type="text" pInputText>
+                                </div>
+                            </div>
+                            <div class="col-12 sm:col-12 md:col-6 lg:col-6">
+                                <div class="p-field">
+                                    <label for="lastname">LastName</label>
+                                    <input id="lastname" type="text" pInputText>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-field">
+                            <label for="address">Address</label>
+                            <p style="color: red; display: inline;">*</p>
+                            <input id="address" type="text" pInputText>
+                        </div>
+
+                        <div class="p-field">
+                            <label for="city">City</label>
+                            <p style="color: red; display: inline;">*</p>
+                            <input id="city" type="text" pInputText>
+                        </div>
+
+                        <div class="grid">
+                            <div class="col-12 sm:col-12 md:col-6 lg:col-6">
+                                <div class="p-field">
+                                    <label for="state">State</label>
+                                    <p style="color: red; display: inline;">*</p>
+                                    <input id="state" type="text" pInputText>
+                                </div>
+                            </div>
+                            <div class="col-12 sm:col-12 md:col-6 lg:col-6">
+                                <div class="p-field">
+                                    <label for="zipcode">Zipcode</label>
+                                    <p style="color: red; display: inline;">*</p>
+                                    <input id="zipcode" type="text" pInputText>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-field">
+                            <label for="phonenumber">Phone Number</label>
+                            <input id="phonenumber" type="text" pInputText>
+                        </div>
+                        <div class="p-field">
+                            <label for="email">Email</label>
+                            <p style="color: red; display: inline;">*</p>
+                            <input id="email" type="text" pInputText>
+                        </div>
+
+                    </div>
+                    <ng-template pTemplate="footer">
+                        <div class="grid">
+                            <div class="col-4">
+                                <p style="color: red; display: inline;">*</p>
+                                <p style=" display: inline;"> - required fields</p>
+
+                            </div>
+                            <div class="col-8">
+                                <div style="display: flex; justify-content: flex-end">
+
+                                    <div> <button pButton pRipple type="button" label="Create Account"
+                                            class="p-button-raised"></button>
+                                        <button pButton pRipple type="button" label="Cancel"
+                                            class="p-button-raised p-button-secondary p-button-text"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </ng-template>
+                </p-card>
+            </div>
+        </div>
+    </div>
+</div>
