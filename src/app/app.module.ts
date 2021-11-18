@@ -13,6 +13,7 @@ import { CheckboxModule } from "primeng/checkbox";
 import { RadioButtonModule } from "primeng/radiobutton";
 import { CardModule } from 'primeng/card';
 import { RippleModule } from 'primeng/ripple';
+import {ToggleButtonModule} from 'primeng/togglebutton';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { RippleModule } from 'primeng/ripple';
     RadioButtonModule,
     FormsModule,
     CardModule,
-    RippleModule
+    RippleModule,
+    ToggleButtonModule
   ],
   declarations: [AppComponent, HomeComponent],
   bootstrap: [AppComponent]

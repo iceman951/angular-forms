@@ -47,8 +47,10 @@
                                 <div class="col-12 md:col-6 lg:col-3"><button id="hover"
                                         style="transition-duration: 0.4s;" pButton pRipple type="button" label="Hover"
                                         class="p-button-raised"></button></div>
-                                <div class="col-12 md:col-6 lg:col-3"><button pButton pRipple type="button"
-                                        label="Pushed" class="p-button-raised"></button></div>
+                                <div class="col-12 md:col-6 lg:col-3">
+                                    <p-toggleButton id="toggle-btn" [(ngModel)]="checked1" onLabel="Pushed"
+                                        offLabel="Pushed" [style]="{'width': '93.5%'}"></p-toggleButton>
+                                </div>
                             </div>
                             <div class="grid">
                                 <div class="col-12 md:col-6 lg:col-3"><button style="color: black;" pButton pRipple
@@ -60,8 +62,9 @@
                                 <div class="col-12 md:col-6 lg:col-3"><button id="hover" style="color: black;" pButton
                                         pRipple type="button" label="Hover"
                                         class="p-button-raised p-button-text"></button></div>
-                                <div class="col-12 md:col-6 lg:col-3"><button style="color: black;" pButton pRipple
-                                        type="button" label="Pushed" class="p-button-raised p-button-text"></button>
+                                <div class="col-12 md:col-6 lg:col-3">
+                                    <span><p-toggleButton id="toggle-btn2" [(ngModel)]="checked2" onLabel="Pushed"
+                                        offLabel="Pushed" [style]="{'width': '93.5%'}"></p-toggleButton></span>
                                 </div>
                             </div>
                             <div class="grid">
@@ -178,8 +181,8 @@
                                 <div style="display: flex; justify-content: flex-end">
 
                                     <div class="grid">
-                                        <button style="width: auto;" pButton pRipple type="button" label="Create Account"
-                                            class="p-button-raised"></button>
+                                        <button style="width: auto;" pButton pRipple type="button"
+                                            label="Create Account" class="p-button-raised"></button>
                                         <button style="width: auto;" pButton pRipple type="button" label="Cancel"
                                             class="p-button-raised p-button-secondary p-button-text"></button>
                                     </div>

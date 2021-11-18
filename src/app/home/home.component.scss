@@ -1,14 +1,3 @@
-// div {
-//     display: flex;  
-//     flex-wrap: wrap;
-//   }
-
-// .p-col-6 {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//    }
-
 .p-button.p-button-raised {
     margin: 0.5rem;
     display: block;
@@ -28,4 +17,15 @@ div.p-field {
 input {
     background-color: rgb(240, 240, 240);
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#hover:hover {
+    display: block;
+    background-color: rgb(94, 195, 0);
+    color: black;
+}
+#toggle-btn,#toggle-btn2 {
+    margin: 0.5rem;
+    overflow: hidden;
+    display: block;
 }

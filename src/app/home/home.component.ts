@@ -10,6 +10,8 @@ export class HomeComponent implements OnInit {
   disabled: boolean = true;
   value1!: string;
   rememberPC: string[] = [];
+  checked1: boolean = true;
+  checked2: boolean = false;
 
   constructor() {}
 
