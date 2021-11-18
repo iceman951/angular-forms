@@ -11,13 +11,21 @@
 
 .p-button.p-button-raised {
     margin: 0.5rem;
+    display: block;
+    width: 90%;
 }
 
 .p-button {
     margin: 0.5rem;
     overflow: hidden;
     position: relative;
+    text-align: center;
 }
 div.p-field {
     padding: 0.35rem;
+}
+
+input {
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
