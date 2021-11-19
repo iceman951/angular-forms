@@ -19,13 +19,11 @@
 
                                 <div style="display: flex; justify-content: flex-end">
                                     <div>
-
-                                        <p-checkbox name="group1" value="true" [(ngModel)]="rememberPC" inputId="ny">
+                                        <p-checkbox name="group1" value="true">
                                         </p-checkbox>
                                         <label style="font-size: 14px; color: grey" for="value"> Remember on this
                                             computer</label>
                                         <p align="right"><a style="font-size: 14px;" href="#">Forget Password?</a></p>
-
                                     </div>
 
                                     <div>
@@ -48,8 +46,8 @@
                                         style="transition-duration: 0.4s;" pButton pRipple type="button" label="Hover"
                                         class="p-button-raised"></button></div>
                                 <div class="col-12 md:col-6 lg:col-3">
-                                    <p-toggleButton id="toggle-btn" [(ngModel)]="checked1" onLabel="Pushed"
-                                        offLabel="Pushed" [style]="{'width': '93.5%'}"></p-toggleButton>
+                                    <p-toggleButton id="toggle-btn" onLabel="Pushed" offLabel="Pushed"
+                                        [style]="{'width': '100%'}"></p-toggleButton>
                                 </div>
                             </div>
                             <div class="grid">
@@ -63,8 +61,8 @@
                                         pRipple type="button" label="Hover"
                                         class="p-button-raised p-button-text"></button></div>
                                 <div class="col-12 md:col-6 lg:col-3">
-                                    <span><p-toggleButton id="toggle-btn2" [(ngModel)]="checked2" onLabel="Pushed"
-                                        offLabel="Pushed" [style]="{'width': '93.5%'}"></p-toggleButton></span>
+                                    <p-toggleButton id="toggle-btn2" onLabel="Pu" offLabel="Pushed"
+                                        [style]="{'width': '100%'}"></p-toggleButton>
                                 </div>
                             </div>
                             <div class="grid">
