@@ -1,0 +1,31 @@
+body, .container, #box1, #box2, #box3 {
+    border: 2px solid rgba(0, 0, 0, 1);
+}
+
+body {
+    margin-inline: 20%;
+}
+
+.section {
+    margin: 3%;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 2em;
+    margin-bottom: 3%;
+}
+  
+.box > * {
+    flex: 1;
+}
+
+#box1, #box2 {
+    padding: 5%;
+    height: 20rem;
+}
+
+#box3 {
+    padding: 5%;
+}

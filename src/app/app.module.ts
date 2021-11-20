@@ -6,8 +6,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { AppComponent } from "./app.component";
 import { HomeComponent } from './home/home.component';
-import { OneComponent } from './learing/one/one.component';
-import { TwoComponent } from './learing/two/two.component';
+import { OneComponent } from './learning/one/one.component';
+import { TwoComponent } from './learning/two/two.component';
 
 import { InputTextModule } from "primeng/inputtext";
 import { ButtonModule } from "primeng/button";
@@ -16,6 +16,7 @@ import { RadioButtonModule } from "primeng/radiobutton";
 import { CardModule } from 'primeng/card';
 import { RippleModule } from 'primeng/ripple';
 import {ToggleButtonModule} from 'primeng/togglebutton';
+import { ThreeComponent } from './learning/three/three.component';
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import {ToggleButtonModule} from 'primeng/togglebutton';
     RippleModule,
     ToggleButtonModule
   ],
-  declarations: [AppComponent, HomeComponent, OneComponent, TwoComponent],
+  declarations: [AppComponent, HomeComponent, OneComponent, TwoComponent, ThreeComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

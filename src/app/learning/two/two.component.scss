@@ -1,0 +1,31 @@
+body, .box1, .box2, .box3, .box4, .box5, .box6, .box7 {
+    border: 2px solid rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+.column-1 {
+    float: left;
+    width: 28.75%;
+}
+
+.column-2 {
+    float: right;
+    width: 68.75%;
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box1,.box2,.box3,.box4,.box5,.box6,.box7 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-bottom: 1rem;;
+}
+
+.box6,.box7 {
+    padding: 30px;
+}
