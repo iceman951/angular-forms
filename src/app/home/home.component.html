@@ -5,34 +5,36 @@
                 <div class="grid">
                     <div class="col-12">
                         <p-card header="Login to your account">
-                            <div class="p-fluid">
-                                <div class="p-field">
-                                    <label for="email">Email</label>
-                                    <input id="email" type="text" pInputText>
+                            <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+                                <div class="p-fluid">
+                                    <div class="p-field">
+                                        <label for="id">ID</label>
+                                        <input class="form-control" id="id" type="text" formControlName="id" pInputText>
+                                    </div>
+                                    <div class="p-field">
+                                        <label for="password">Password</label>
+                                        <input class="form-control" id="password" type="text" formControlName="password" pInputText>
+                                    </div>
                                 </div>
-                                <div class="p-field">
-                                    <label for="password">Password</label>
-                                    <input id="password" type="text" pInputText>
-                                </div>
-                            </div>
-                            <ng-template pTemplate="footer">
 
-                                <div style="display: flex; justify-content: flex-end">
+                                <div
+                                    style="display: flex; justify-content: flex-end; margin-top: 1em; margin-right: 1em">
                                     <div>
                                         <p-checkbox name="group1" value="true">
                                         </p-checkbox>
                                         <label style="font-size: 14px; color: grey" for="value"> Remember on this
                                             computer</label>
-                                        <p align="right"><a style="font-size: 14px;" href="#">Forget Password?</a></p>
+                                        <p align="right"><a style="font-size: 14px;" href="#">Forget Password?</a>
+                                        </p>
                                     </div>
 
                                     <div>
-                                        <button pButton pRipple type="button" label="Login"
+                                        <button pButton pRipple type="submit" label="Login"
                                             class="p-button-raised"></button>
                                     </div>
                                 </div>
 
-                            </ng-template>
+                            </form>
                         </p-card>
                     </div>
                     <div class="col-12">
