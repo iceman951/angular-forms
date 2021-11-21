@@ -7,15 +7,10 @@ import { FormBuilder , FormControl, FormGroup } from '@angular/forms';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit { 
   disabled: boolean = true;
-  value1!: string;
-  rememberPC: string[] = [];
-
-  loginForm = new FormGroup({
-    id: new FormControl(''),
-    password: new FormControl(''),
-  });
+  
+  loginForm!: FormGroup;
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient) {}
 

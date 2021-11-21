@@ -11,4 +11,7 @@ router.get('/', function(req, res, next) {
 /* http://localhost:3000/users/login */
 router.post("/login", userController.login);
 
+/* http://localhost:3000/users/login */
+router.post("/me", userController.me);
+
 module.exports = router;

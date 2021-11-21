@@ -3,7 +3,7 @@ body, .container, #box1, #box2, #box3 {
 }
 
 body {
-    margin-inline: 20%;
+    margin-inline: 20%; //margin-left & right
 }
 
 .section {
@@ -11,8 +11,6 @@ body {
 }
 .box {
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 10px;
     column-gap: 2em;
     margin-bottom: 3%;
 }
@@ -22,10 +20,9 @@ body {
 }
 
 #box1, #box2 {
-    padding: 5%;
     height: 20rem;
 }
 
-#box3 {
+#box3,#box1, #box2 {
     padding: 5%;
 }

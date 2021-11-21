@@ -18,7 +18,7 @@ exports.login = async (req, res, next) => {
     }
 
     if (password != user.password) {
-      return res.json({
+      return res.status(401).json({
         message: "พาสผิด",
       });
     }
@@ -51,7 +51,9 @@ exports.login = async (req, res, next) => {
 
 exports.me = async (req, res, next) => {
     try {
-        r
+        return  res.status(200).json({
+          message: "me",
+        });
     } catch (error) {
         next(error);
     }
